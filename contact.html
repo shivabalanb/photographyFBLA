@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+      <link rel="stylesheet" href="./contact.css">
+      <script src="https://kit.fontawesome.com/c77c4a32f6.js" crossorigin="anonymous"></script>
+
+   </head>
+   <body>
+      <header>
+         <div class="logo-container">
+            <a href="#index.html"><h1>Quintero Photography</h1></a>
+         </div>
+         <label for="toggle">&#9776;</label>
+         <input type="checkbox" id="toggle"/>
+            <nav>
+                  <ul class="nav-links">
+                     <li ><a href="./index.html" class="nav-link">home</a></li>
+                     <li ><a href="./portfolio.html" class="nav-link">portfolio</a></li>
+                     <li ><a href="./aboutme.html" class="nav-link">about me</a></li>
+                     <li ><a href="./booking.html" class="nav-link">booking</a></li>
+                     <li ><a href="./contact.html" class="nav-link">contact</a></li>
+                  </ul>
+            </nav>
+      </header>
+      <main>
+
+
+      <div class="container">
+
+         <div class="top" >
+            <form class="form">
+                  <div class="pageTitle title">Contact</div>
+                  <div class="secondaryTitle title">Have questions? Not sure exactly which plan to choose? <br> Please do not hesitate to reach out by completing this form</div>
+                  <div class="nameOutline outline" required>Your full name...</div>
+                  <input id="yum" type="text" class="name formEntry" placeholder="Name" />
+                  <div class="emailOutline outline">An email adress I can reach...</div>
+                  <input type="text" class="email formEntry" placeholder="Email" required/>
+                  <div class="messageOutline outline">Leave me a message...</div>
+                  <input type="text" class="subject formEntry" placeholder="Subject" required/>
+                  <textarea class="message formEntry" placeholder="Message" required></textarea>
+                  <div class="dateOutline outline">Is there a day you would like to schedule...</div>
+                  <input class ="calendar formEntry" type="date" id="send" oninput="result.value = send.value">
+
+                  <button type="button" id="submit-btn" class="submit formEntry">Submit</button>
+            </form>
+
+
+
+      <script type="text/javascript">
+         let yummy = document.getElementById('submit-btn');
+
+         yummy.addEventListener('click',()=>{
+            yummy.innerHTML = 'Submitted';
+            document.querySelector('.message').value = " ";
+            document.getElementById('yum').placeholder = "yo plz"
+            document.querySelector('.name').value = " ";
+            document.querySelector('.email').value = " ";
+            document.querySelector('.subject').value = " ";
+            document.querySelector('.message').value = " ";
+            document.querySelector('.calendar').value = " ";
+         });
+      </script>
+
+
+
+
+
+
+         <script type="text/javascript" src="./particles.js"></script>
+         <script type="text/javascript" src="./particles.min.js"></script>
+         <script type="text/javascript" src = "./app.js"></script>
+
+   </container>
+      </main>
+      <footer>
+         <div class="footer-container">
+            <div class="footer-logo">
+               <h1 id="text">Quintero <br> Photography</h1>
+            </div>
+            <div class="footer-navigation">
+               <ul class="links">
+                  <li ><a href="./index.html" id="text">home</a></li>
+                  <li ><a href="./portfolio.html" id="text">portfolio</a></li>
+                  <li ><a href="./aboutme.html" id="text">about me</a></li>
+                  <li ><a href="./booking.html"id="text">booking</a></li>
+                  <li ><a href="./contact.html"id="text">contact</a></li>
+               </ul>
+            </div>
+            <div class="footer-text">
+               <h3 id="text">Copyright</h3>
+               <div class="icons">
+                  <i class="fas fa-envelope fa-2x" id="text"></i>
+                  <i class="fab fa-twitter fa-2x" id="text"></i>
+                  <i class="fab fa-instagram fa-2x" id="text"></i>
+               </div>
+            </div>
+
+         </div>
+      </footer>
+   </body>
+</html>
